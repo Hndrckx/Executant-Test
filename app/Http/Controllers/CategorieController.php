@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class CategorieController extends Controller
 {
     public function create () {
-        return view('layouts.createCategorie');
+        return view('layouts.createCat');
     }
 
     public function store (Request $request) {
@@ -20,7 +20,7 @@ class CategorieController extends Controller
 
     public function edit ($id) {
         $edit = Categorie::find($id);
-        return view('layouts.editCategorie', compact('edit'));
+        return view('layouts.editCat', compact('edit'));
     }
 
     public function update ($id, Request $request) {

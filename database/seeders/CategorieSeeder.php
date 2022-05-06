@@ -16,7 +16,7 @@ class CategorieSeeder extends Seeder
     public function run()
     {
         DB::table('categories')->insert([
-            ['categorie' => 'Voitures']
+            ['categorie' => 'Manga']
         ]);
     }
 }

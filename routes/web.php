@@ -30,12 +30,12 @@ Route::get('/dashboard', function () {
 
 Route::get('/avatars', function () {
     $allAvatars = Avatar::all();
-    return view('layouts.avatars', compact('allAvatars'));
+    return view('layouts.avatar', compact('allAvatars'));
 });
 
 Route::get('/createAvatars', function () {
     $avatars = Avatar::all();
-    return view('layouts.createAvatar', compact('avatars'));
+    return view('layouts.createAv', compact('avatars'));
 });
 
 Route::post('addava', [AvatarController::class, 'store']);
@@ -48,7 +48,7 @@ Route::get('/users', function () {
 });
 
 Route::get('/images', function () {
-    return view('layouts.images');
+    return view('layouts.image');
 });
 
 Route::post('addima', [ImageController::class, 'store']);
@@ -59,7 +59,7 @@ Route::put('/update/{id}/update', [UserController::class, 'update']);
 
 Route::get('/categories', function () {
     $allCategorie = Categorie::all();
-    return view('layouts.categories', compact('allCategorie'));
+    return view('layouts.categorie', compact('allCategorie'));
 });
 
 Route::get('createCategorie', [CategorieController::class, 'create']);
