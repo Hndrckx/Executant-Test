@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Bond',
                 'firstName' => 'James',
-                'age' => '32',
+                'age' => '47',
                 'avatar_id' => 2,
                 'role_id' => 2,
                 'email' => 'jb@gmail.be',

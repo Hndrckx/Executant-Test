@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 class ImageController extends Controller
 {
+    // STORE IMAGE
     public function store(Request $request)
     {
         $store = new Image();

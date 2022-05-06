@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 class AvatarController extends Controller
 {
+    // DELETE AVATAR
     public function delete($id)
     {
         $avatar = Avatar::find($id);
@@ -15,11 +16,13 @@ class AvatarController extends Controller
         return redirect('/avatars');
     }
 
+    // CREATE AVATAR
     public function create()
     {
         return view('/create');
     }
 
+    // STORE AVATAR
     public function store(Request $request)
     {
         $allAvatars = Avatar::all()->count();

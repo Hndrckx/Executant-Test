@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    // EDIT USER
     public function edit ($id) {
         $edit = User::find($id);
         $avatars = Avatar::all();
@@ -16,6 +17,7 @@ class UserController extends Controller
         return view('layouts.editUser', compact('edit', 'avatars', 'roles'));
     }
 
+    // UPDATE USER
     public function update ($id, Request $request) {
         $update = User::find($id);
         $update->firstName = $request->firstName;
