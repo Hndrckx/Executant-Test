@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             [
-                'name' => 'Hndrckx',
+                'name' => 'Hendrickx',
                 'firstName' => 'Anthony',
                 'age' => '27',
                 'avatar_id' => 2,
